@@ -1,0 +1,19 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:stable
+    steps:
+      - checkout
+      - run:
+        name: Check Node shell
+        shell: node
+        command: | 
+           const na = "la"
+           console.log(`${na}`)
+      - run:
+        name: Check Node shell
+        shell: node
+        command: | 
+           const na = "la"
+           console.log("aa" + na)
