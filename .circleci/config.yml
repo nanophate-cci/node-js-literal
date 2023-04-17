@@ -6,14 +6,14 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Check Node shell
-        shell: node
-        command: | 
+          name: Check Node shell
+          shell: node
+          command: | 
              const na = "la"
              console.log(`${na}`)
       - run:
-        name: Check Node shell
-        shell: node
-        command: | 
+          name: Check Node shell
+          shell: node
+          command: | 
              const na = "la"
              console.log("aa" + na)
