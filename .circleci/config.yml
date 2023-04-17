@@ -12,7 +12,7 @@ jobs:
           command: | 
             const util = require('util');
             const na = "la";
-            const greeting = util.format('Hello, %s!', `${na}`);
+            const greeting = util.format(`Hello, ${na}!`);
             console.log(greeting);
       - run:
           name: Check Node addition to string
