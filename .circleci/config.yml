@@ -11,8 +11,8 @@ jobs:
           shell: node
           command: | 
             const util = require('util');
-            const na = "la";
-            const greeting = util.format(`Hello, ${na}!`);
+            const na = "custom_error";
+            const greeting = util.format('\x1b[31m%s\x1b[0m', `${na}!`);
             console.log(greeting);
       - run:
           name: Check Node addition to string
