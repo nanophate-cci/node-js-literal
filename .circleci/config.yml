@@ -10,8 +10,10 @@ jobs:
           name: Check Node literal
           shell: node
           command: | 
-             const na = "la"
-             console.log(`${na}`)
+            const util = require('util');
+            const na = "la";
+            const greeting = util.format('Hello, %s!', `${na}`);
+            console.log(greeting);
       - run:
           name: Check Node addition to string
           shell: node
