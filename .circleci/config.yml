@@ -12,8 +12,11 @@ jobs:
           command: | 
             const util = require('util');
             const na = "custom_error";
-            const greeting = util.format('\x1b[31m%s\x1b[0m', `${na}!`);
-            console.log(greeting);
+            const na_custom_message = util.format('\x1b[31m%s\x1b[0m', `${na}!`);
+            const custom_message = util.format('\x1b[31mcustom_error\x1b[0m');
+            console.log(na_custom_message);
+            console.log(custom_message);
+            console.log(na_custom_message === custom_message);
       - run:
           name: Check Node addition to string
           shell: node
