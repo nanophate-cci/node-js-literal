@@ -5,14 +5,15 @@ jobs:
       - image: cimg/node:16.19.0
     steps:
       - checkout
+      - run: node -v
       - run:
-          name: Check Node shell
+          name: Check Node literal
           shell: node
           command: | 
              const na = "la"
              console.log(`${na}`)
       - run:
-          name: Check Node shell
+          name: Check Node addition to string
           shell: node
           command: | 
              const na = "la"
