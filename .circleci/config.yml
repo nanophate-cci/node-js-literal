@@ -9,11 +9,11 @@ jobs:
         name: Check Node shell
         shell: node
         command: | 
-           const na = "la"
-           console.log(`${na}`)
+             const na = "la"
+             console.log(`${na}`)
       - run:
         name: Check Node shell
         shell: node
         command: | 
-           const na = "la"
-           console.log("aa" + na)
+             const na = "la"
+             console.log("aa" + na)
